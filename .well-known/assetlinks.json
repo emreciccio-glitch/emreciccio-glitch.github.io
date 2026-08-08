@@ -1,0 +1,12 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "io.github.emreciccio_glitch.twa",
+    "sha256_cert_fingerprints": [
+      "A8:0D:C0:59:9C:E1:FF:86:FB:BF:EB:1B:88:21:81:69:1F:35:2F:27:D4:C2:B2:E9:BE:B0:09:18:CA:DD:5E:CC",
+      "A9:29:0F:32:CF:63:1C:EE:2E:6B:A0:60:5F:70:9A:61:04:96:A8:91:4F:02:EE:CC:6E:3A:41:97:F7:26:3F:25",
+      "78:7B:C1:CA:ED:21:85:06:5B:63:03:76:C9:14:70:45:0B:C0:6D:88:A9:80:79:85:DF:10:AE:02:52:04:81:F1"
+    ]
+  }
+}]
