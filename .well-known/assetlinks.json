@@ -2,10 +2,9 @@
   "relation": ["delegate_permission/common.handle_all_urls"],
   "target": {
     "namespace": "android_app",
-    "package_name": "io.github.emreciccio_glitch.twa",
+    "package_name": "com.pokervariance.simulator",
     "sha256_cert_fingerprints": [
-      "09:61:2E:28:A9:A1:44:09:42:1F:55:D0:AC:FF:C8:B9:4E:B7:11:D7:23:04:3B:35:7F:D7:55:1F:CA:E2:41:B8",
-      "26:96:CA:31:8C:93:11:8C:F0:4E:CB:9E:A7:36:B8:E2:93:07:5B:62:B9:42:6C:CB:33:68:C8:D9:09:74:C8:07"
+      "C3:BA:4A:08:F4:B0:55:C9:94:C8:FF:F7:14:A2:8C:65:64:7E:05:1D:6F:D6:70:54:97:56:B5:D7:6B:C0:4D:40"
     ]
   }
 }]
