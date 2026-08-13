@@ -29,6 +29,8 @@
       "namespace": "android_app",
       "package_name": "com.emreciccio.pokerguide",
       "sha256_cert_fingerprints": [
+        "9F:9B:40:F1:2F:A6:7C:44:92:87:60:E8:E5:86:94:DF:37:1D:9E:20:78:D2:8D:11:66:66:61:19:87:00:F7:4C",
+        "C4:A4:A7:8D:96:4D:25:69:6B:C9:C5:27:35:BD:88:7D:5D:43:11:E8:98:50:16:5D:30:83:47:46:7E:FA:04:EE",
         "05:D3:DD:EC:3C:EF:AA:6E:B7:7E:6C:95:28:45:DB:9C:66:59:36:7C:86:16:A4:73:B8:CA:D7:AB:34:EC:9E:E0"
       ]
     }
