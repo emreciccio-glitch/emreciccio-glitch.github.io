@@ -340,4 +340,30 @@ applyLang();runCurrent();syncPurchases(false);
 if('serviceWorker'in navigator)window.addEventListener('load',function(){navigator.serviceWorker.register('./service-worker.js')});
 })();
 </script>
+<script id="dgs-price-fix">
+;(async function(){
+  var SKUS = ['mtt_pro','cash_variance','spin_variance'];
+  if (!('getDigitalGoodsService' in window)) return;
+  try {
+    var svc = await window.getDigitalGoodsService('https://play.google.com/billing');
+    var details = await svc.getDetails(SKUS);
+    var map = {};
+    details.forEach(function(d){ map[d.itemId] = d; });
+    document.querySelectorAll('.paywall').forEach(function(pw, i){
+      var d = map[SKUS[i]];
+      if (!d || !d.price) return;
+      var el = pw.querySelector('.price');
+      if (!el) return;
+      var txt;
+      try {
+        txt = new Intl.NumberFormat(navigator.language, {
+          style: 'currency', currency: d.price.currency
+        }).format(parseFloat(d.price.value));
+      } catch(e) { txt = d.price.value + ' ' + d.price.currency; }
+      el.textContent = txt;
+    });
+  } catch(e) {}
+})();
+</script>
+
 </body></html>
