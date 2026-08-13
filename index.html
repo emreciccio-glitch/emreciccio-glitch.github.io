@@ -317,7 +317,7 @@ function syncPurchases(loud){if(!HAS_BILLING){if(loud)toast(t('alertAndroid'));r
 window.getDigitalGoodsService('https://play.google.com/billing').then(function(svc){return svc.listPurchases?svc.listPurchases():null}).then(function(list){
 if(!list){if(loud)toast(t('restoreNone'));return}
 var owned={};list.forEach(function(p){if(SKUS[p.itemId])owned[SKUS[p.itemId]]=true});var changed=false;
-for(var sku in SKUS){var key=SKUS[sku],has=!!owned[key];if(unlocks[key]!==has){unlocks[key]=has;changed=true}if(has)localStorage.setItem(sku,'true');else localStorage.removeItem(sku)}
+var trust=list.length>0&&navigator.onLine!==false;for(var sku in SKUS){var key=SKUS[sku],has=!!owned[key];if(has){if(!unlocks[key]){unlocks[key]=true;changed=true}localStorage.setItem(sku,'true')}else if(trust){if(unlocks[key]){unlocks[key]=false;changed=true}localStorage.removeItem(sku)}}
 if(changed)applyUnlocks();
 if(loud)toast(list.length?t('restoreOk'):t('restoreNone'));
 }).catch(function(){if(loud)toast(t('alertUnavail'))})}
