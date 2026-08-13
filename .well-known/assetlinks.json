@@ -5,8 +5,9 @@
       "namespace": "android_app",
       "package_name": "com.pokervariance.simulator",
       "sha256_cert_fingerprints": [
-        "2F:F8:3D:8A:9F:94:B9:DD:2B:C9:E8:AA:FB:71:DA:D0:CA:D3:33:79:5D:0C:83:01:A8:A1:3D:D1:B2:33:BB:0D",
-        "C3:BA:4A:08:F4:B0:55:C9:94:C8:FF:F7:14:A2:8C:65:64:7E:05:1D:6F:D6:70:54:97:56:B5:D7:6B:C0:4D:40"
+        "F8:AB:11:A4:03:E2:32:95:71:91:81:DB:22:F3:1D:07:23:F4:BA:A6:D9:BF:11:34:50:C5:43:3F:A9:8A:14:83",
+        "C3:BA:4A:08:F4:B0:55:C9:94:C8:FF:F7:14:A2:8C:65:64:7E:05:1D:6F:D6:70:54:97:56:B5:D7:6B:C0:4D:40",
+        "2F:F8:3D:8A:9F:94:B9:DD:2B:C9:E8:AA:FB:71:DA:D0:CA:D3:33:79:5D:0C:83:01:A8:A1:3D:D1:B2:33:BB:0D"
       ]
     }
   },
